@@ -1,0 +1,22 @@
+.input-text {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.input-text input[type="text"] {
+  font-size: 16px;
+  border: 1px solid #ebeced;
+  background: white;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #e6e6e6;
+}
+.input-text input[type="text"]:focus {
+  border: 2px solid blueviolet;
+}
+.input-text input[type="text"]:disabled {
+  background: #e6e6e6;
+  color: #999;
+  cursor: not-allowed;
+}

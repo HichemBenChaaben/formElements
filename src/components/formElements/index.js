@@ -4,6 +4,7 @@ import Checkbox from './checkbox/checkbox';
 import InputText from './inputText/inputText';
 import Radio from './radio/radio';
 import Select from './select/select';
+import Button from './buttons/button';
 
 export default class FormElements extends Component {
   constructor() {
@@ -56,6 +57,13 @@ export default class FormElements extends Component {
           <InputText placeholder="Im a placeholder" onChange={this.handleOnChange} />
           <InputText placeholder="Im a placeholder with a value" value={this.state.defaultInputTextValue} onChange={this.handleOnChange} />
           <InputText placeholder="Im a placeholder with a value" disabled onChange={this.handleOnChange} />
+        </div>
+
+        <div className="card">
+          <h3>Buttons</h3>
+          <Button label="Normal state button" className="proppp" />
+          <Button label="Subtle button" className="subtle" /> 
+          <Button label="disabled button" type="button" disabled />
         </div>
       </div>
     );
